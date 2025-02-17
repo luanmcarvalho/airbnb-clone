@@ -1,0 +1,32 @@
+.top-image {
+    height: 560px;
+    background-image: url('./src/images/Airbnb-website.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.top-bar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.top-menu {
+    flex: 1;
+}
+
+.rbnb-logo {
+    margin-left:  80px;
+    margin-top: 120px;
+}
+
+.menu-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-center-item {
+    flex: 1;
+}
