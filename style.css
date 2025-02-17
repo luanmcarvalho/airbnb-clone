@@ -1,12 +1,43 @@
+@font-face {
+    font-family: 'AirbnbMedium';
+    src: url("./src/fonts/AirbnbCerealMedium.ttf");
+}
+
+@font-face {
+    font-family: 'AirbnbLight';
+    src: url("./src/fonts/AirbnbCerealLight.ttf");
+}
+
+@font-face {
+    font-family: 'AirbnbBook';
+    src: url("./src/fonts/AirbnbCerealBook.ttf");
+}
+
+@font-face {
+    font-family: 'AirbnbBold';
+    src: url("./src/fonts/AirbnbCerealBold.ttf");
+}
+
+@font-face {
+    font-family: 'AirbnbExtraBold';
+    src: url("./src/fonts/AirbnbCerealExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'AirbnbBlack';
+    src: url("./src/fonts/AirbnbCerealBlack.ttf");
+}
+
 .top-image {
     height: 560px;
-    background-image: url('./src/images/Airbnb-website.webp');
+    background-image: url('https://a0.muscache.com/im/pictures/ddc7f01f-3fb3-483c-87e6-701dad52c930.jpg?im_w=2560');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
 }
 
 .top-bar {
+    width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
@@ -23,10 +54,67 @@
 
 .menu-center {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .menu-center-item {
-    flex: 1;
+    font-family: 'AirbnbLight';
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.menu-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu-button {
+    background: transparent;
+    color: black;
+    font-family: 'AirbnbLight';
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background: #f7f7f7;
+}
+
+.globe {
+    background: transparent;
+    border: none;
+    color: black;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    size: 50%;
+}
+
+.globe:hover {
+    background: #f7f7f7;
+
+}
+
+.globe-size {
+    font-size: 20px;
+}
+
+.menu-icon {
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 10px;
+}
+
+.menu-icon:hover {
+    background: #f7f7f7;
 }
