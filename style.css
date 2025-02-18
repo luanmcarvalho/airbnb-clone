@@ -64,6 +64,12 @@
     font-size: 17px;
 }
 
+.menu-center-item:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .menu-social {
     display: flex;
     justify-content: center;
@@ -141,6 +147,11 @@
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    cursor: pointer;
+}
+
+.search-01:hover {
+    background: #f7f7f7;
 }
 
 .search-02 {
@@ -148,6 +159,11 @@
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    cursor: pointer;
+}
+
+.search-02:hover {
+    background: #f7f7f7;
 }
 
 .search-03 {
@@ -155,6 +171,11 @@
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    cursor: pointer;
+}
+
+.search-03:hover {
+    background: #f7f7f7;
 }
 
 .search-04 {
@@ -181,6 +202,11 @@
 .search-04-base {
     display: flex;
     flex-direction: column;
+}
+
+.search-04-base:hover {
+    background: #f7f7f7;
+    cursor: pointer;
 }
 
 .separator {
@@ -215,10 +241,49 @@
 }
 
 .search-button:hover {
-    background: rgb(228, 28, 92);
+    background: rgb(199, 21, 77);
 }
 
 .search-button-base {
     display: flex;
     justify-content: flex-end;
+}
+
+
+.text {
+    font-size: 60px;
+    font-family: 'AirbnbBold';
+    color: black;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.text-second {
+    margin-top: -10px;
+}
+
+.hero-sub {
+    font-size: 20px;
+    font-family: 'AirbnbLight';
+    color: black;
+    margin-left: 80px;
+    margin-top: -15px;
+}
+
+.hero-button {
+    background: rgb(227, 27, 96);
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 20px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'AirbnbLight';
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin-left: 80px;
+}
+
+.hero-button:hover {
+    background: rgb(199, 21, 77);
 }
