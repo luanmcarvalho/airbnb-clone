@@ -287,3 +287,189 @@
 .hero-button:hover {
     background: rgb(199, 21, 77);
 }
+
+.places-div {
+    margin-top: 12rem;
+    margin-left: 80px;
+}
+
+.places-title {
+    font-size: 40px;
+    font-family: 'AirbnbBold';
+    color: black;
+}
+
+.places-item {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+.places-image {
+    flex: 1;
+    width: 85px;
+    height: 85px;
+}
+
+.places-text {
+    flex: 3;
+    margin-left: 20px;
+}
+
+.local {
+    font-size: 18px;
+    font-family: 'AirbnbMedium';
+    font-weight: 400;
+}
+
+.local-sub {
+    font-size: 14px;
+    font-family: 'AirbnbLight';
+    color: #3c3c3c;
+    font-size: 18px;
+    margin-top: 4px;
+
+}
+
+.living-title {
+    font-size: 40px;
+    font-family: 'AirbnbBold';
+    color: black;
+}
+
+.living {
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.living-places {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.living-image {
+    flex: 1;
+    width: 375px;
+    height: 375px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.living-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.living-text {
+    margin-top: 10px;
+    font-family: 'AirbnbLight';
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.living-image-01 {
+    flex: 1;
+    width: 375px;
+    min-height: 375px;
+    border-radius: 5px;
+    background-image: url(./src/images/As-casas-de-campo-com-varanda-ao-redor-se-conectam-diretamente-com-a-natureza-do-entorno.-Fonte-Revista-Viva-Decora.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.living-image-02 {
+    flex: 1;
+    width: 375px;
+    min-height: 375px;
+    border-radius: 5px;
+    background-image: url(./src/images/Casa-no-Enseada-Lagos-de-Xangri-La-de-Alto-Padrao.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.living-image-03 {
+    flex: 1;
+    width: 375px;
+    min-height: 375px;
+    border-radius: 5px;
+    background-image: url(./src/images/casa-contemporanea-elegante-ao-entardecer_190619-4533.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.living-image-04 {
+    flex: 1;
+    width: 375px;
+    min-height: 375px;
+    border-radius: 5px;
+    background-image: url(./src/images/Cachorro-no-sofa-foto-de-aliaksandrbarysenka-1024x1024.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    margin-top: 100px;
+    margin-right: 80px;
+    border: 0;
+    border-radius: 10px;
+    background-image: url('./src/images/become-a-host.jpg');
+    background-repeat: no-repeat;
+    height: 525px;
+}
+
+.banner-text {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-title {
+    font-size: 60px;
+    font-family: 'AirbnbBold';
+    color: white;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.banner-sub {
+    font-size: 20px;
+    font-family: 'AirbnbLight';
+    color: white;
+}
+
+.banner-button {
+    background: rgb(227, 27, 96);
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: 170px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'AirbnbLight';
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.banner-title-2 {
+    font-size: 60px;
+    font-family: 'AirbnbBold';
+    color: white;
+    justify-content: center;
+    margin-top: -15px;
+}
+
+.footer {
+    background-color: #bcbcbc;
+    border: 1px solid #000000;
+    margin-top: 100px;
+}
