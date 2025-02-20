@@ -469,7 +469,64 @@
 }
 
 .footer {
-    background-color: #bcbcbc;
-    border: 1px solid #000000;
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
     margin-top: 100px;
+    height: 600px;
+}
+
+.footer-row {
+    display: flex;
+    margin-top: 50px;
+}
+
+.footer-column {
+    flex: 1;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-family: 'AirbnbBold';
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer-sub {
+    font-size: 16px;
+    font-family: 'AirbnbLight';
+    color: rgb(73, 73, 73);
+    margin-top: 10px;
+
+}
+
+.footer-sub:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.div-footer {
+    height: 2px;
+    width: 80%;
+    background: #dbdbdb;
+    border-radius: 1px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.social {
+    display: flex;
+    height: 100px;
+    background-color: #f7f7f7;
+}
+
+.rights {
+    font-size: 16px;
+    font-family: 'AirbnbLight';
+    color: rgb(73, 73, 73);
+    margin-left: 80px;
+    margin-top: 20px;
 }
