@@ -62,6 +62,7 @@
     font-family: 'AirbnbLight';
     font-weight: 500;
     font-size: 17px;
+    transition: all 0.2s ease-in-out;
 }
 
 .menu-center-item:hover {
@@ -87,10 +88,16 @@
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .menu-button:hover {
     background: #f7f7f7;
+}
+
+.menu-button:focus, .globe:focus, .menu-icon:focus, .search-button:focus, .hero-button:focus {
+  outline: 2px solid #ff385c;
+  outline-offset: 2px;
 }
 
 .globe {
@@ -102,6 +109,7 @@
     cursor: pointer;
     align-items: center;
     size: 50%;
+    transition: all 0.2s ease-in-out;
 }
 
 .globe:hover {
@@ -140,6 +148,11 @@
     width: 60%;
     display: flex;
     align-items: center;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+}
+
+.search > div {
+    position: relative;
 }
 
 .search-01 {
@@ -238,6 +251,7 @@
     cursor: pointer;
     display: flex;
     margin-left: 148px;
+    transition: all 0.2s ease-in-out;
 }
 
 .search-button:hover {
@@ -256,6 +270,7 @@
     color: black;
     margin-left: 80px;
     margin-top: 40px;
+    line-height: 1.2;
 }
 
 .text-second {
@@ -282,6 +297,7 @@
     font-weight: 600;
     color: white;
     margin-left: 80px;
+    transition: all 0.2s ease-in-out;
 }
 
 .hero-button:hover {
@@ -307,6 +323,11 @@
     cursor: pointer;
 }
 
+.places-item:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
 .places-image {
     flex: 1;
     width: 85px;
@@ -322,6 +343,7 @@
     font-size: 18px;
     font-family: 'AirbnbMedium';
     font-weight: 400;
+    line-height: 1.5;
 }
 
 .local-sub {
@@ -330,7 +352,7 @@
     color: #3c3c3c;
     font-size: 18px;
     margin-top: 4px;
-
+    line-height: 1.5;
 }
 
 .living-title {
@@ -363,11 +385,17 @@
     flex-direction: column;
 }
 
+.living-item:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
 .living-text {
     margin-top: 10px;
     font-family: 'AirbnbLight';
     font-size: 20px;
     font-weight: 900;
+    line-height: 1.5;
 }
 
 .living-image-01 {
@@ -379,6 +407,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .living-image-02 {
@@ -390,6 +419,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .living-image-03 {
@@ -401,6 +431,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .living-image-04 {
@@ -412,6 +443,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .banner {
@@ -429,6 +461,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .banner-title {
@@ -443,6 +476,7 @@
     font-size: 20px;
     font-family: 'AirbnbLight';
     color: white;
+    line-height: 1.5;
 }
 
 .banner-button {
@@ -458,6 +492,7 @@
     color: white;
     font-weight: 600;
     margin-top: 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 .banner-title-2 {
@@ -499,7 +534,7 @@
     font-family: 'AirbnbLight';
     color: rgb(73, 73, 73);
     margin-top: 10px;
-
+    line-height: 1.5;
 }
 
 .footer-sub:hover {
@@ -529,4 +564,43 @@
     color: rgb(73, 73, 73);
     margin-left: 80px;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .places-item {
+    flex-direction: column;
+  }
+  
+  .living-places {
+    flex-wrap: wrap;
+  }
+  
+  .living-item {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-row {
+    flex-wrap: wrap;
+  }
+}
+
+/* Adjust line heights for better readability */
+.local, .local-sub, .living-text, .banner-sub, .footer-sub {
+  line-height: 1.5;
+}
+
+/* Fix spacing and alignment */
+.text {
+  line-height: 1.2;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
